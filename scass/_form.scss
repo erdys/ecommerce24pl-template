@@ -1,0 +1,184 @@
+.form-control {
+    color: #000;
+    border: 2px solid #ebebeb;
+    font-size: 12px;
+    @include rounded(3px);
+    @include boxShadow(none);
+    &:focus {
+        background: #ebebeb;
+        border: 2px solid #ebebeb;
+        @include boxShadow(none);
+    }
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder {
+        color: #aaaaaa;
+    }
+}
+
+.control-label {
+    font-weight: normal;
+}
+
+.form-horizontal {
+    textarea {
+        width: 100% !important;
+    }
+    .required {
+        color: #dd0000;
+    }
+
+}
+
+.bootstrap-select {
+    .btn {
+        &:focus {
+            outline: none !important;
+        }
+    }
+    .btn-default {
+        &:hover, &:focus {
+            background: #FFF;
+        }
+    }
+    &.btn-group {
+        &.open {
+            .dropdown-toggle {
+                @include boxShadow(none);
+                &.btn-default {
+                    background: #FFF !important;
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        margin: 0 -2px;
+        border: 2px solid #ebebeb;
+        right: 0;
+        top: -2px;
+        @include rounded(2px);
+        @include boxShadow(none);
+        li {
+            outline: none;
+            a {
+                font-size: 11px;
+                &:hover, &:focus {
+                    background: #F0F0F0;
+                    outline: none !important;
+                }
+            }
+        }
+    }
+    
+    .caret {
+        margin-top: -6px !important;
+        padding: 4px;
+        border: solid #d6d6d6;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        @include rotate(45deg);
+    }
+}
+
+.form-newsletter {
+    .title {
+        margin: 0;
+        padding: 0;
+        font: bold 13px/120% $font-head;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+    .form-control {
+        height: 40px;
+        font-size: 11px;
+        @include rounded(3px);
+    }
+    .form-group-submit {
+        position: relative;
+        width: 100%;
+        @include clearfix;
+        input, button {
+            float: left;
+        }
+        input {
+            padding-right: 80px;
+            width: 100%;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+        }
+    }
+    .btn-submit {
+        height: 40px;
+        font: 11px/100% $font-head;
+        border: 2px solid #ebebeb;
+        background: #FFF;
+        color: #6f6f6f;
+        @include rounded(0 3px 3px 0);
+    }
+    &-main {
+        padding: 10px;
+        background: url(../images/bg_panel-newsletter.png) 100% 0 no-repeat;
+        background-color: #264653;
+        background-size: 91px 85px;
+    }
+    &-bottom {
+        padding: 0 0 10px 0;
+        background: url(../images/bg_panel-newsletter.png) 100% 0 no-repeat;
+        .title {
+            color: #74727b;
+        }
+        .form-control {
+            color: #b3b2b4;
+            border-color: #58575a;
+            background: #47464a;
+            &::-webkit-input-placeholder,
+            &:-moz-placeholder,
+            &::-moz-placeholder,
+            &:-ms-input-placeholder {
+                color: #79787b;
+            }
+        }
+        .btn-submit {
+            color: #b3b2b4;
+            border-color: #58575a;
+            background: #47464a;
+            &:hover, &:focus {
+                color: lighten(#b3b2b4, 10%);
+                background: lighten(#47464a, 10%);
+            }
+        }
+
+    }
+}
+
+
+.form-aside-archive {
+    .form-group {
+        margin-bottom: 5px;
+    }
+    label {
+        margin-bottom: 0;
+        font-size: 11px;
+        font-weight: normal;
+        color: #767676;
+    }
+    .form-control {
+        font-size: 11px;
+    }
+    .bootstrap-select {
+        height: 40px;
+        border: 2px solid #ebebeb;
+
+    }
+    .btn-link {
+        color: #282828;
+        &:hover, &:focus {
+            color: lighten(#282828, 30%);
+        }
+    }
+}

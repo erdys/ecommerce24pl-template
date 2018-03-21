@@ -1,0 +1,63 @@
+$colours:
+    "1" #b6cb58,
+    "2" #45a8d9,
+    "3" #eb8126,
+    "4" #8a6eb0,
+    "5" #029c9b,
+    "6" #da3e62;
+
+@each $i in $colours{
+    .color-#{nth($i, 1)} {
+    	.box-site-content {
+    		&:before {
+    			background: nth($i, 2);
+    		}
+    	}
+    	.box-article-header {
+    		.title {
+                background: lighten(nth($i, 2), 38%);
+                box-shadow: 10px 0 0 lighten(nth($i, 2), 38%), -10px 0 0 lighten(nth($i, 2), 38%);
+    		}
+    		.image-hld {
+    			&:before {
+    				background: rgba(nth($i, 2), 0.50);
+    			}
+    		}
+
+    	}
+        .js-hover {
+            .box-article-header {
+                .title {
+                    box-shadow: 20px 0 0 lighten(nth($i, 2), 38%), -10px 0 0 lighten(nth($i, 2), 38%);
+                }
+            }
+        }
+        .label-number {
+        	background: lighten(nth($i, 2), 38%);
+        }
+        .list-bull {
+        	li {
+        		&:before {
+        			background: nth($i, 2);
+                    box-shadow: 
+                    0 0 0 1px #FFF,
+                    0 0 0 2px nth($i, 2);
+        		}
+        	}
+        }
+        .list-tab {
+        	li {
+    		    background: lighten(nth($i, 2), 56%);
+    		    border: 1px solid nth($i, 2);
+    		    a {
+    		    	color: nth($i, 2);
+    		    }
+        	}
+        }
+        .section {
+        	color: nth($i, 2);
+    	    border: 1px solid nth($i, 2) !important;
+    	    background: lighten(nth($i, 2), 56%) !important;
+        }
+    }
+}

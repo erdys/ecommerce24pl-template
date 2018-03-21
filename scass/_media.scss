@@ -1,0 +1,361 @@
+/* add label */
+@media (max-width: 767px) {
+    body:before {
+        content: "XS";
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        background: #cc0;
+        color: #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+    body:before {
+        content: "SM";
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        background: #cc0;
+        color: #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+    body:before {
+        content: "MD";
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        background: #cc0;
+        color: #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+@media (min-width: 1200px) {
+    body:before {
+        content: "LG";
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        background: #cc0;
+        color: #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+/* xs */
+
+@media (max-width: 767px) {
+
+    .fb-box-hld {
+        display: none;
+    }
+    .logo {
+        padding-top: 5px;
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .site-header-top-right {
+        margin-top: 0;
+        padding-bottom: 10px;
+        .btn-login {
+            display: none;
+        }
+        .btn {
+            margin: 0 2px;
+        }
+    }
+    
+    .nav-top {
+        margin: 0 5px;
+    }
+
+    .nav-online li {
+        &:before {
+            display: none;
+        }
+    }
+
+    .nav-inline {
+        li {
+            margin: 0 6px;
+            font-size: 11px !important;
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .section-search-hld {
+        display: none;
+    }
+
+    .box-search-top {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        form {
+            .skew:before {display: none;}
+        }
+    }
+
+    .nav-main, .nav-online {
+        padding-right: 0;
+        float: none;
+        li {
+            float: none;
+            display: block;
+        }
+        &:before {
+            display: none;
+        }
+    }
+
+    .panel-issue-current {
+        .magazine-cover {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .site-footer-data {
+        .box-promo-subscription {width: 50%; float: left;}
+        .box-newsletter-bottom {width: 50%; float: left;}
+    }
+    
+    // .section {
+    //     &-nav {
+    //         &-hld {
+    //             padding: 0;
+    //             // background: #FFF;
+                
+    //         }
+    //         &-one {padding: 0;}
+    //         &-two {padding: 0;}
+    //     }
+    //     &-search {
+    //         &-hld {
+    //             padding: 0;
+    //             background: #2a9d8f;
+    //         }
+    //     }
+    // }
+
+    .list-toolbox .item .title {
+        min-height: auto;
+    }
+}
+
+/* sm */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .logo {
+        padding-top: 5px;
+    }
+
+    .site-header-top-right {
+        padding: 0;
+        .btn-icon-menu,
+        .btn-login,
+        .btn-icon-search {
+            display: none;
+        }
+    }
+
+    .btn-login {
+        padding: 10px 15px;
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .btn-cart {
+        padding: 6px 4px;
+    }
+    
+    .nav-inline {
+        li {
+            margin: 0 6px;
+            font-size: 11px !important;
+            a {
+                padding: 10px 5px;
+            }
+        }
+    }
+    
+    .nav-main li a {
+        font-size: 10px;
+        padding: 15px 8px 14px 8px;
+        &:before {
+            content: "";
+
+        }
+        &:hover {
+            &:before {
+                width: auto;
+                height: 8px;
+                right: 0;
+            }
+        }
+    }
+
+    .nav-online li {
+        a {
+            font-size: 10px;
+        }
+
+    }
+
+    .site-footer-data {
+        .panel-promo-subscription {
+            margin: 20px 0 0 0;
+        }
+        .panel-newsletter-bottom {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    /* nav.scss */
+
+    .nav-footer-aboutus {
+        &:after {
+            display: none;
+        }
+    }
+
+    .list-toolbox .item .title {
+        min-height: auto;
+    }
+}
+
+/* md */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .hp {
+        .panel-articles[data-panel-articles='1'] {
+            .box-site {
+                width: 33.3333%;
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .site-header-top-right {
+        padding-top: 7px;
+        .btn-icon-menu,
+        .btn-icon-login,
+        .btn-icon-search {
+            display: none;
+        }
+    }
+    
+    .nav-inline {
+        li {
+            margin: 0 10px;
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .nav-main li a {
+        font-size: 12px;
+        padding: 15px 10px 14px 28px;
+    }
+
+    .nav-online li a {
+        font-size: 11px;
+    }
+
+    .panel-issue-current {
+        .magazine-cover {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    #hld-publications-apps {
+        .panel-publications {
+            padding: 0 10px 0 0;
+        }
+        .panel-apps {
+            padding: 0 0 0 10px;
+        }
+    }
+
+    .list-toolbox .item .title {
+        min-height: 39px;
+    }
+}
+
+/* lg */
+
+@media (min-width: 1200px) {
+
+    .hp {
+        .panel-articles[data-panel-articles='1'] {
+            .box-site {
+                width: 33.3333%;
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .site-header-top-right {
+        .btn-icon-menu,
+        .btn-icon-login,
+        .btn-icon-search {
+            display: none;
+        }
+    }
+
+    .sec {
+        &.sec-list-article {
+            .panel-articles {
+                .col-md-4 {
+                    width: 33.3333%;
+                }
+            }
+        }
+    }
+
+    .form-newsletter-bottom {
+        .form-group-submit {
+            width: 70%;
+        }
+    }
+}
