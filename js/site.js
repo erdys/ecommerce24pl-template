@@ -43,8 +43,8 @@ function slickVertical() {
     $('.panel-partners').each(function(){
         var slickHeight = $(this).find('.js-slick-items').eq(0).height();
         var slickHolderHeight = $(this).find('.content-inner').height();
-        console.log(slickHeight);
-        console.log(slickHolderHeight);
+        // console.log(slickHeight);
+        // console.log(slickHolderHeight);
         var diff = Math.floor((slickHolderHeight - slickHeight) / 2);
         $(this).find('.js-slick-items').css('margin-top' , diff + 'px');
     });

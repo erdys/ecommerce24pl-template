@@ -31,6 +31,17 @@
 
 }
 
+.form-horizontal,
+.form-inline {
+    .checkbox-group {
+        margin: 5px 0;
+            .additional {
+                margin: 0 0 0 5px;
+                font-size: 10px;
+            }
+    }
+}
+
 .bootstrap-select {
     .btn {
         &:focus {

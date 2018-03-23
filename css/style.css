@@ -272,6 +272,14 @@ svg {
 .form-horizontal .required {
   color: #dd0000; }
 
+.form-horizontal .checkbox-group,
+.form-inline .checkbox-group {
+  margin: 5px 0; }
+  .form-horizontal .checkbox-group .additional,
+  .form-inline .checkbox-group .additional {
+    margin: 0 0 0 5px;
+    font-size: 10px; }
+
 .bootstrap-select .btn:focus {
   outline: none !important; }
 .bootstrap-select .btn-default:hover, .bootstrap-select .btn-default:focus {
@@ -1230,9 +1238,9 @@ svg {
     background: #FFF;
     display: block;
     position: relative;
-    box-shadow: 0 1px 5px transparent;
-    -moz-box-shadow: 0 1px 5px transparent;
-    -webkit-box-shadow: 0 1px 5px transparent;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -1275,12 +1283,9 @@ svg {
       -moz-border-radius: 2px;
       border-radius: 2px; }
     .box-site-content .link-loop {
-      display: block;
       position: absolute;
       top: 0;
-      bottom: 0;
       left: 0;
-      right: 0;
       z-index: 110; }
       .box-site-content .link-loop span {
         display: none; }
@@ -1297,6 +1302,10 @@ svg {
       -o-transform: scale(1.1); }
     .box-site .js-hover:before {
       width: 100%; }
+  .box-site-content.box-site-content-promo.full .box-article-header {
+    margin: -10px; }
+  .box-site-content.box-site-content-promo .box-article-authors {
+    margin: 10px 0 0 0; }
 
 .box-nextpage {
   display: table; }
@@ -1610,7 +1619,7 @@ svg {
     padding: 0 0 0 24px;
     font-size: 13px; }
 .box-article-authors {
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 0 10px; }
   .box-article-authors .author a {
     font-size: 11px;
@@ -1618,7 +1627,7 @@ svg {
     .box-article-authors .author a:hover, .box-article-authors .author a:focus {
       color: #1a1a1a; }
 .box-article-tags {
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
   position: relative;
   overflow: hidden; }
   .box-article-tags:before {
@@ -2337,10 +2346,7 @@ svg {
   #hld-publications-apps .panel-publications {
     padding: 0 10px 0 0; }
   #hld-publications-apps .panel-apps {
-    padding: 0 0 0 10px; }
-
-  .list-toolbox .item .title {
-    min-height: 39px; } }
+    padding: 0 0 0 10px; } }
 /* lg */
 @media (min-width: 1200px) {
   .hp .panel-articles[data-panel-articles='1'] .box-site {

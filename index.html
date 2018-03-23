@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" name="IE=edge">
-    <!-- <meta name="viewport" name="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>E-commerce &amp; Digital Marketing</title>
     <meta name="keywords" name="" />
     <meta name="description" name="" />
@@ -12,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/icheck/skins/square/red.css" />
+
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -353,7 +356,19 @@
                 <div class="form-group form-group-submit">
                     <input type="email" name="email" class="form-control" placeholder="Twój adres e-mail"><button type="submit" class="btn btn-submit">Zapisz się</button>
                 </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" /><span class="additional">Akceptuje... (zobacz więcej)</span></label>
+                </div>
             </form>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('input').iCheck({
+                        checkboxClass: 'icheckbox_square-red',
+                        radioClass: 'iradio_square-red',
+                        increaseArea: '20%' // optional
+                    });
+                });
+            </script>
         </div>
 
 </div>
@@ -367,7 +382,7 @@
 <div class="container container-cols cc-with-filtrs cc-with-partners">
     <div class="row">
 
-        <div class="panel panel-articles box-articles-1 col-sm-16 col-md-12 color-1" data-panel-articles="1">
+        <div class="panel panel-articles col-sm-16 col-md-12 color-1" data-panel-articles="1">
             <div class="title-container">
                 <div class="hld-title">
                     <h2 class="title title-icon"><span class="icon icon-section-1"></span>E-sprzedaż</h2>
@@ -402,16 +417,6 @@
                             <div class="box-article-authors">
                                 <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
                             </div>
-                            <div class="box-article-tags">
-                                <ul class="list list-tab list-tab-inline">
-                                    <li><a href="#">#polityka cenowa</a></li>
-                                    <li><a href="#">#up selling</a></li>
-                                    <li><a href="#">#up selling</a></li>
-                                    <li><a href="#">#up selling</a></li>
-                                    <li><a href="#">#up selling</a></li>
-                                    <li><a href="#">#up selling</a></li>
-                                </ul>
-                            </div>
                         </div>
                         <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
                     </div>
@@ -436,36 +441,6 @@
                                     <li>O bazę kontaktów powinniśmy dbać?</li>
                                     <li>Jak ogrodnik o swój ogród?</li>
                                     <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
-                                </ul>
-                            </div>
-                            <div class="box-article-authors">
-                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
-                            </div>
-                        </div>
-                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
-                    </div>
-                </div>
-
-                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
-                    <div class="box-site-content">
-                        <div class="box-article-header">
-                            <div class="label-hld">
-                                <span class="label label-open">Tekst otwarty</span>
-                                <span class="label label-promo">Promocyjny</span>
-                                <span class="label label-number">nr 1/2017</span>
-                            </div>
-                            <div class="title-hld">
-                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
-                            </div>
-                            <div class="image-hld">
-                                <div class="image-fill">
-                                    <img src="http://via.placeholder.com/350x350" class="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-article-data js-mh" data-match-height="items-data">
-                            <div class="box-article-lead js-mh" data-match-height="items-content">
-                                <ul class="list list-bull">
                                     <li>O bazę kontaktów powinniśmy dbać?</li>
                                     <li>Jak ogrodnik o swój ogród?</li>
                                     <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
@@ -499,6 +474,45 @@
                         <div class="box-article-data js-mh" data-match-height="items-data">
                             <div class="box-article-lead js-mh" data-match-height="items-content">
                                 <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
                                     <li>O bazę kontaktów powinniśmy dbać?</li>
                                     <li>Jak ogrodnik o swój ogród?</li>
                                     <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
@@ -565,14 +579,15 @@
                 <h2 class="title">Partnerzy</h2>
             </div>
             <div class="content-inner">
-                <ul class="js-slick-items list-partners">
+                <img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" class="img-responsive" />
+<!--                 <ul class="js-slick-items list-partners">
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" class="img-responsive" /></a></li>
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=2" class="img-responsive" /></a></li>
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/cccffc/000000?text=3" class="img-responsive" /></a></li>
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/ffccfc/000000?text=4" class="img-responsive" /></a></li>
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=5" class="img-responsive" /></a></li>
                     <li class="item"><a href="#"><img src="http://via.placeholder.com/250x65/cffffc/000000?text=6" class="img-responsive" /></a></li>
-                </ul>
+                </ul> -->
             </div>
             <script type="text/javascript">
                 $(document).ready(function(){
@@ -637,6 +652,16 @@
                             </div>
                             <div class="box-article-authors">
                                 <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                            <div class="box-article-tags">
+                                <ul class="list list-tab list-tab-inline">
+                                    <li><a href="#">#polityka cenowa</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                </ul>
                             </div>
                         </div>
                         <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
@@ -847,6 +872,70 @@
                 </div>
 
                 <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content box-site-content-promo full">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-cols">
+    <div class="row">
+        <div class="panel panel-articles box-articles-2 col-lg-16 color-4" data-panel-articles="4">
+            <div class="hld-title">
+                <h2 class="title title-icon"><span class="icon icon-section-4"></span>E-technologie</h2>
+            </div>
+            <div class="panel-inner margin-clear">
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld"></div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
                     <div class="box-site-content">
                         <div class="box-article-header">
                             <div class="label-hld">
@@ -867,6 +956,7 @@
                             <div class="box-article-lead js-mh" data-match-height="items-content">
                                 <ul class="list list-bull">
                                     <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
                                     <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
                                 </ul>
                             </div>
@@ -878,11 +968,356 @@
                     </div>
                 </div>
 
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content box-site-content-promo">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                            <div class="box-article-tags">
+                                <ul class="list list-tab list-tab-inline">
+                                    <li><a href="#">#polityka cenowa</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                    <li><a href="#">#up selling</a></li>
+                                </ul>
+                            </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
 </div>
 
+<div class="container container-cols">
+    <div class="row">
+        <div class="panel panel-articles box-articles-2 col-lg-16 color-5" data-panel-articles="5">
+            <div class="hld-title">
+                <h2 class="title title-icon"><span class="icon icon-section-5"></span>E-paragraf</h2>
+            </div>
+            <div class="panel-inner margin-clear">
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld"></div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content box-site-content-promo">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-cols">
+    <div class="row">
+        <div class="panel panel-articles box-articles-2 col-lg-16 color-6" data-panel-articles="6">
+            <div class="hld-title">
+                <h2 class="title title-icon"><span class="icon icon-section-6"></span>E-inspiracje</h2>
+            </div>
+            <div class="panel-inner margin-clear">
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld"></div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-lead js-mh" data-match-height="items-content">
+                                <ul class="list list-bull">
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>O bazę kontaktów powinniśmy dbać?</li>
+                                    <li>Jak ogrodnik o swój ogród?</li>
+                                    <li>Odpowiedni plon, musi siać, podlewać, wyrywać chwasty, nawozić.</li>
+                                </ul>
+                            </div>
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-16 col-sm-8 col-md-4 box-site">
+                    <div class="box-site-content box-site-content-promo">
+                        <div class="box-article-header">
+                            <div class="label-hld">
+                                <span class="label label-open">Tekst otwarty</span>
+                                <span class="label label-promo">Promocyjny</span>
+                                <span class="label label-number">nr 1/2017</span>
+                            </div>
+                            <div class="title-hld">
+                                <span class="title-around"><h2 class="title">10 zasad komunikacji e&#8209;mailowej z klientami</h2></span>
+                            </div>
+                            <div class="image-hld">
+                                <div class="image-fill">
+                                    <img src="http://via.placeholder.com/350x350" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-article-data js-mh" data-match-height="items-data">
+                            <div class="box-article-authors">
+                                <span class="author"><a href="#">Izabela Krejca-Pawski</a></span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-loop"><span>Czytaj więcej</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -964,7 +1399,19 @@
                             <div class="form-group form-group-submit">
                                 <input type="email" name="email" class="form-control" placeholder="Twój adres e-mail"><button type="submit" class="btn btn-submit">Zapisz się</button>
                             </div>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" /><span class="additional">Akceptuje... (zobacz więcej)</span></label>
+                            </div>
                         </form>
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $('input').iCheck({
+                                    checkboxClass: 'icheckbox_square-red',
+                                    radioClass: 'iradio_square-red',
+                                    increaseArea: '20%' // optional
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -982,8 +1429,9 @@
 <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
-<script type="text/javascript" src="js/site.js"></script>
+<!-- <script type="text/javascript" src="js/site.js"></script> -->
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/icheck/icheck.min.js"></script>
 
 </body>
 </html>

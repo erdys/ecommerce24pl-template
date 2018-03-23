@@ -1143,20 +1143,15 @@ svg {
 
         }
         .link-loop {
-            display: block; 
+            // display: block; 
             position: absolute;
             top: 0;
-            bottom: 0;
+            // bottom: 0;
             left: 0;
-            right: 0;
+            // right: 0;
             z-index: 110;
             span {display: none;}
         }
-        // &-promo {
-        //     .box-article-header {
-        //         min-height: 325px;
-        //     }
-        // }
     }
 
     .js-hover {
@@ -1171,6 +1166,18 @@ svg {
         }
         &:before {
             width: 100%;
+        }
+    }
+    &-content {
+        &.box-site-content-promo {
+            &.full {
+                .box-article-header {
+                    margin: -10px;
+                }
+            }
+            .box-article-authors {
+                margin: 10px 0 0 0;
+            }
         }
     }
 }
@@ -1516,7 +1523,7 @@ svg {
         }
     }
     &-authors {
-        margin: 15px 0;
+        margin: 10px 0;
         padding: 0 10px;
         .author {
             a {
@@ -1529,7 +1536,7 @@ svg {
         }
     }
     &-tags {
-        margin: 15px 0 0 0;
+        margin: 10px 0 0 0;
         position: relative;
         overflow: hidden;
         &:before {
