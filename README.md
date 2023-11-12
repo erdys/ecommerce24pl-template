@@ -11,6 +11,4 @@ Thanks to this process, I was able to focus on each stage, ensuring that the fin
 
 ## Additional Information
 
----
-
 The layout was used for all magazines within the publishing house, with only the color palette being adjusted.
